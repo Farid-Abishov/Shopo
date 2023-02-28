@@ -1,0 +1,286 @@
+// modal 
+
+.modal-dialog{
+    max-width: 100%;
+    .modal-content{
+        @media (max-width:576px){
+            max-width: 220px;
+        }
+        @media (max-width:768px){
+            max-width: 550px;
+        }
+        height: 500px;
+        max-width: 812px;
+        margin: 90px auto;
+        border-radius: 0;
+        background-image:url(/shopo/src/images/modalimg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .modal-body{
+            .col-xl-12{
+                display: flex;
+                justify-content: flex-end;
+                svg{
+                    cursor: pointer;
+                }
+            }
+            .modal_content{
+                p{
+                    font-size: 20px;
+                    margin-top: 10px;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                }
+                .discount{
+                    padding: 0;
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 26px;
+                    span{
+                        color: rgb(223, 57, 57);
+                    }
+                }
+                 .span_txt{
+                    display:block;
+                    max-width: 380px;
+                 }
+                form{
+                    margin-top: 100px;
+                    input{
+                        border: none;
+                        padding: 10px;
+                    }
+                    button{
+                        padding: 10px;
+                        background-color: $navbgcolor;
+                        border: none;
+                        transform: translateX(-6px);
+                        @media (max-width:384px){
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+//header
+header{
+    #header_top{
+       .container{
+        display: flex;
+        justify-content:space-between;
+        .topbarnav{
+            display: inline-block;
+            ul{
+                margin-top: 10px;
+                display: flex;
+                padding: 0;
+                li{
+                   margin-right: 10px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .topdropdowns{
+            @media(max-width:576px){
+                display: none;
+            }
+            display: inline-block;
+            ul{
+                margin-top: 10px;
+                display: flex;
+                li{
+                   margin-right: 10px;
+                   font-size: 14px;
+                   cursor: pointer;
+                   margin-left: 10px;
+                   position: relative;
+                   i{
+                    font-size: 10px;
+                    font-weight: 500;
+                   }
+                   .ff{
+                    width: 130px;
+                   }
+                  
+                   ul{
+                    display: none;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    padding: 0;
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+                    flex-direction: column;
+                    li{
+                        margin-top:7px;
+                    }
+                   }
+                }
+            }
+        }
+       }
+    }
+    
+    #header_mid{
+        .col-2{
+            img{
+                @media(max-width:1024px){
+                    display: none;
+                }
+            }
+            i{
+                display: none;
+                @media(max-width:1024px){
+                    display: block;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .col-7{
+            img{
+                 display: none;
+                 @media(max-width:1024px){
+                    display: block;
+                }
+            }
+            .midheadform{
+                @media(max-width:1024px){
+                    display: none;
+                }   
+                display: flex;
+                width: 66%;
+                border: 1px solid rgba(214, 216, 214, 0.679);
+                 input{
+                    border: none;
+                    padding: 10px;
+                 }
+                 span{
+                    display: inline-block;
+                    width: 1px;
+                    height: 20px;
+                    margin-top: 13px;
+                    background-color: rgb(143, 141, 141);
+                 }
+                 button{
+                    background-color: $navbgcolor;
+                    color: black;
+                    border: none;
+                    padding: 5px 10px;
+                 }
+            }
+        }
+        .col-3{
+            display: flex;
+            justify-content: flex-end;
+            ul{
+                display: flex;
+                li{ 
+                    @media(max-width:1024px){
+                        display: none;
+                        &:nth-child(3){
+                         display: block;  
+                          
+                        }
+                    }  
+                    margin-left: 20px;
+                    line-height: 44px;
+                    position: relative;
+                    i{
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+                    .icon_num{
+                        font-size: 11px;
+                        background: $navbgcolor;
+                        width: 17px;
+                        height: 16px;
+                        padding: 3px;
+                        border: 50%;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: -6px;
+                        top: 4px;
+                    }
+                    &:nth-child(3){
+                        &:hover{
+                            .addtocard{
+                             display: block;
+                             @media(max-width:1024px){
+                                display: none;
+                             }
+                            }
+                        }
+                        position: relative;
+                       .addtocard{
+                        display: none;
+                        height: 522px;
+                        padding: 0;
+                        position: absolute;
+                        top: 36px;
+                        right: -44px;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                        ul{
+                            width: 270px;
+                            height: 400px;
+                            overflow-y: scroll;
+                            flex-direction: column;
+                            padding: 0;
+                            li{
+                                display: flex;
+                                margin: 0;
+                                img{
+                                    width: 70px;
+                                    height: 70px;
+                                    object-fit: cover;
+                                }
+                                span{
+                                    font-size: 13px;
+                                    line-height: 13px;
+                                    margin-top: 11px;
+                                }
+                                i{
+                                    &:hover{
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                        .addtocard_bottom{
+                            padding-top: 20px;
+                            button{
+                                width: 100%;
+                                margin-bottom: 7px;
+                                border: none;
+                            }
+                            .checkcart{
+                                background-color: $navbgcolor;
+                            }
+                        }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+// addtocard scroll 
+.dd::-webkit-scrollbar{
+    width: 3px;
+    }
+    .dd::-webkit-scrollbar-thumb {
+        background-color: rgb(193, 191, 191);
+        border-radius: 5px;
+     }
+// .aa{
+//     display: block;
+// }
