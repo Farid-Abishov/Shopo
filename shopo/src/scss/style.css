@@ -545,4 +545,16 @@ header #header_bottom .container .col-4 button {
   cursor: pointer;
   background-color: rgb(225, 223, 223);
   padding: 5px;
+}
+#game .brands {
+  margin-top: 50px;
+}
+#game .brands .container {
+  background-color: #fff;
+}
+#game .brands .container .row .col-xl-2 {
+  border: 1px solid #e0dada;
+  display: flex;
+  justify-content: center;
+  padding: 29px;
 }/*# sourceMappingURL=style.css.map */

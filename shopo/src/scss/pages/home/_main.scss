@@ -561,4 +561,18 @@ header{
             }
         }
     }
+    .brands{
+        margin-top: 50px;
+        .container{
+            background-color: #fff;
+            .row{
+                .col-xl-2{
+                    border: 1px solid #e0dada;
+                    display: flex;
+                    justify-content: center;
+                    padding: 29px;
+                }
+            }
+        }
+    }
 }
