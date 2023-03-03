@@ -163,7 +163,7 @@ header #header_mid .col-7 img {
 }
 header #header_mid .col-7 .midheadform {
   display: flex;
-  width: 66%;
+  width: 67%;
   border: 1px solid rgba(214, 216, 214, 0.679);
 }
 @media (max-width: 1024px) {
@@ -186,7 +186,7 @@ header #header_mid .col-7 .midheadform button {
   background-color: rgb(255, 187, 56);
   color: black;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 12px;
 }
 header #header_mid .col-3 {
   display: flex;
@@ -245,6 +245,7 @@ header #header_mid .col-3 ul li:nth-child(3):hover .addtocard {
   }
 }
 header #header_mid .col-3 ul li:nth-child(3) .addtocard {
+  z-index: 1;
   background-color: #fff;
   display: none;
   height: 522px;
@@ -342,11 +343,13 @@ header #header_bottom .container .col-6 nav ul li {
   position: relative;
 }
 header #header_bottom .container .col-6 nav ul li a {
+  font-weight: 600;
   color: black;
   text-decoration: none;
 }
 header #header_bottom .container .col-6 nav ul li i {
   font-size: 12px;
+  font-weight: 600;
 }
 header #header_bottom .container .col-6 nav ul li:hover .container {
   display: block;
@@ -433,5 +436,113 @@ header #header_bottom .container .col-4 button {
 }
 #first .firstsection_icons .container {
   background-color: #fff;
-  padding: 20px 0px;
+  padding: 10px 0px;
+}
+#first .firstsection_icons .container .row .col-xl-3 .icon_body {
+  display: flex;
+  padding: 10px 20px;
+}
+#first .firstsection_icons .container .row .col-xl-3 .icon_body i {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(255, 187, 56);
+  font-weight: 600;
+  margin-top: 6px;
+}
+#first .firstsection_icons .container .row .col-xl-3 .icon_body .body_text {
+  padding: 5px;
+  display: inline-block;
+}
+#first .firstsection_icons .container .row .col-xl-3 .icon_body .body_text p {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+#first .firstsection_icons .container .row .col-xl-3 .icon_body .body_text span {
+  color: #a8a4a4;
+}
+
+#game {
+  background-color: rgba(232, 230, 230, 0.475);
+  margin-bottom: 200px;
+  padding: 30px 0px;
+}
+#game .container .row .col-xl-3 .game_item {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  width: 280px;
+}
+@media (max-width: 768px) {
+  #game .container .row .col-xl-3 .game_item {
+    width: 100%;
+  }
+}
+#game .container .row .col-xl-3 .game_item .game_img {
+  min-height: 280px;
+}
+#game .container .row .col-xl-3 .game_item .game_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#game .container .row .col-xl-3 .game_item .game_ftr {
+  padding: 10px;
+}
+#game .container .row .col-xl-3 .game_item .game_ftr i {
+  color: rgb(255, 187, 56);
+}
+#game .container .row .col-xl-3 .game_item .game_ftr p {
+  font-weight: 600;
+  font-size: 14px;
+}
+#game .container .row .col-xl-3 .game_item .game_ftr span.ovrlineprise {
+  text-decoration: line-through;
+}
+#game .container .row .col-xl-3 .game_item .game_ftr span.redprice {
+  color: red;
+}
+#game .container .row .col-xl-3 .game_item ul {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+#game .container .row .col-xl-3 .game_item ul li {
+  color: #000000;
+  font-weight: 600;
+}
+#game .container .row .col-xl-3 .game_item ul li i {
+  font-size: 13px;
+}
+#game .container .row .col-xl-3 .game_item button {
+  padding: 5px 20px;
+  border: none;
+  background-color: rgb(255, 187, 56);
+  color: black;
+  transform: translateY(44px);
+  margin: 0 auto;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+#game .container .row .col-xl-3 .game_item:hover button {
+  transform: translateY(-6px);
+}
+#game .container .row .col-xl-3 .game_item:hover .game_icons {
+  right: 10px;
+}
+#game .container .row .col-xl-3 .game_item .game_icons {
+  position: absolute;
+  right: -32px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+#game .container .row .col-xl-3 .game_item .game_icons i {
+  margin-bottom: 8px;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: rgb(225, 223, 223);
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

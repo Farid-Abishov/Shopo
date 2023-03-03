@@ -25,8 +25,10 @@ UK&&UK.addEventListener("click",()=>{
 
 //all category cntnt
 const Navcategory=document.querySelector(".nav_category");
-const Categry_cntnt=document.querySelector("category_cntnt");
+const Categry_cntnt=document.querySelector(".category_cntnt");
 
 Navcategory&&Navcategory.addEventListener("click",()=>{
    Categry_cntnt.classList.toggle=("actv_cate_cntnt");
+   // console.log('ok');
+   
 })
