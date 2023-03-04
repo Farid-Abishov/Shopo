@@ -87,6 +87,7 @@
 }
 //header
 header{
+    background-color: #fff;
     #header_top{
        .container{
         display: flex;
@@ -388,6 +389,8 @@ header{
                                         }
                                         a{
                                         font-size: 14px;
+                                        font-weight: 100;
+                                        color: #858383;
                                          &:hover{
                                             color: $navbgcolor;
                                             border-bottom: 1px solid $navbgcolor;
@@ -822,7 +825,7 @@ header{
      p{
         font-weight: 600;
         font-size: 22px;
-        margin-top: 60px;
+        margin-top: 80px;
         span{
             color: $navbgcolor;
         }
@@ -872,5 +875,32 @@ footer{
                 }
             }
         }
+    }
+    .copyright{
+      .container{
+        .copy_container{
+            display: flex;
+            justify-content: space-between;
+            .copy_left{
+                i{
+                    font-size: 20px;
+                    margin-right: 10px;
+                    color: #858383;
+                    cursor: pointer;
+                    &:hover{
+                        color: #000000;
+                    }
+                }
+                hr{
+                    display: block;
+                }
+                span{
+                    word-spacing: 6px;
+                    font-size: 20px;
+                    color: #858383;
+                }
+            }
+        }
+      }  
     }
 }

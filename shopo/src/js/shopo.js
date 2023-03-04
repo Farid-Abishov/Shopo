@@ -6,7 +6,7 @@ window.addEventListener("load",()=>{
     setTimeout(
        ()=>{
     Modal.style.display="block";
-       },1000)
+       },500)
 })
 ModalBtn.addEventListener("click",()=>{
    Modal.style.display="none"
