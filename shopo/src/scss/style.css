@@ -833,6 +833,9 @@ header #header_bottom .container .col-4 button {
 footer {
   padding: 50px 0px;
 }
+footer .ftr_logo {
+  text-align: center;
+}
 footer .container .row .col-xl-3 p {
   color: rgb(110, 108, 108);
 }
@@ -847,6 +850,9 @@ footer .container .row .col-xl-3 ul li {
 footer .container .row .col-xl-3 ul li a {
   text-decoration: none;
   color: rgb(110, 108, 108);
+}
+footer .container .row .col-xl-3 ul li a:hover {
+  color: rgb(255, 187, 56);
 }
 footer .copyright .container .copy_container {
   display: flex;

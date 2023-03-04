@@ -855,6 +855,9 @@ header{
 //footer
 footer{
     padding: 50px 0px;
+    .ftr_logo{
+        text-align: center;
+    }
     .container{
         .row{
             .col-xl-3{
@@ -870,6 +873,9 @@ footer{
                         a{
                             text-decoration: none;
                             color: rgb(110, 108, 108);
+                            &:hover{
+                                color: $navbgcolor;
+                            }
                         }
                     }
                 }
