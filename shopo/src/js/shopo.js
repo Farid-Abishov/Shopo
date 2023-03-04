@@ -32,6 +32,7 @@ Navcategory&&Navcategory.addEventListener("click",()=>{
    // console.log('ok');
    
 })
+
 //totop
 const Totop=document.querySelector(".to-top");
 Totop&&Totop.addEventListener("click", () =>{
@@ -43,6 +44,6 @@ window.addEventListener("scroll",()=>{
       Totop.style.display="flex";
    }
    else{
-      Totop.style.display="none ";
+      Totop.style.display="none";
    }
 })

@@ -99,7 +99,6 @@ h4 {
   right: 20px;
   border-radius: 50%;
   display: none;
-  animation-name: fadeInUp;
   animation-duration: 0.2s;
 }
 .to-top svg {
@@ -453,6 +452,9 @@ header #header_bottom .container .col-4 button {
   width: 100%;
   height: 100%;
 }
+#first .container .row .col-xl-4 .row {
+  height: 100%;
+}
 #first .container .row .col-xl-4 .row .col-xl-12 img {
   width: 100%;
   height: 100%;
@@ -510,8 +512,8 @@ header #header_bottom .container .col-4 button {
 #game .container .row .col-xl-3 .game_item .game_img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: none;
+     object-fit: none;
 }
 #game .container .row .col-xl-3 .game_item .game_ftr {
   padding: 10px;
@@ -580,7 +582,7 @@ header #header_bottom .container .col-4 button {
   border: 1px solid #e0dada;
   display: flex;
   justify-content: center;
-  padding: 29px;
+  padding: 48px;
 }
 
 #second {
@@ -785,7 +787,7 @@ header #header_bottom .container .col-4 button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 34vh;
   margin-bottom: 50px;
 }
 #third .container {
@@ -826,6 +828,9 @@ header #header_bottom .container .col-4 button {
 footer {
   padding: 50px 0px;
 }
+footer .container .row .col-xl-3 p {
+  color: rgb(110, 108, 108);
+}
 footer .container .row .col-xl-3 ul {
   padding: 0;
   flex-direction: column;
@@ -836,5 +841,5 @@ footer .container .row .col-xl-3 ul li {
 }
 footer .container .row .col-xl-3 ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(110, 108, 108);
 }/*# sourceMappingURL=style.css.map */
