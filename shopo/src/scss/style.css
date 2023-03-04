@@ -10,6 +10,11 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  background-color: rgba(232, 230, 230, 0.475);
+}
+
+h4 {
+  font-weight: 600;
 }
 
 .modal-dialog {
@@ -80,6 +85,28 @@ body {
   }
 }
 
+.to-top {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(255, 187, 56);
+  background-color: rgb(255, 187, 56);
+  color: rgba(66, 64, 64, 0.793);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: none;
+  animation-name: fadeInUp;
+  animation-duration: 0.2s;
+}
+.to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
 header #header_top .container {
   display: flex;
   justify-content: space-between;
@@ -124,6 +151,8 @@ header #header_top .container .topdropdowns ul li i {
   font-weight: 500;
 }
 header #header_top .container .topdropdowns ul li .ff {
+  z-index: 1;
+  background-color: #fff;
   width: 130px;
 }
 header #header_top .container .topdropdowns ul li ul {
@@ -417,9 +446,8 @@ header #header_bottom .container .col-4 button {
 }
 
 #first {
-  background-color: rgba(232, 230, 230, 0.475);
   padding-top: 40px;
-  padding-bottom: 40px;
+  margin-bottom: 50px;
 }
 #first .container .row .col-xl-8 img {
   width: 100%;
@@ -462,9 +490,7 @@ header #header_bottom .container .col-4 button {
 }
 
 #game {
-  background-color: rgba(232, 230, 230, 0.475);
-  margin-bottom: 200px;
-  padding: 30px 0px;
+  margin-bottom: 50px;
 }
 #game .container .row .col-xl-3 .game_item {
   overflow: hidden;
@@ -549,12 +575,266 @@ header #header_bottom .container .col-4 button {
 #game .brands {
   margin-top: 50px;
 }
-#game .brands .container {
-  background-color: #fff;
-}
 #game .brands .container .row .col-xl-2 {
+  background-color: #fff;
   border: 1px solid #e0dada;
   display: flex;
   justify-content: center;
   padding: 29px;
+}
+
+#second {
+  margin-bottom: 50px;
+}
+#second .container {
+  padding: 0;
+}
+#second .container .row .col-xl-6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second .container .row .col-xl-6 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .row .col-xl-6 span {
+  position: absolute;
+  left: 30px;
+  bottom: 150px;
+  font-size: 24px;
+  font-weight: 600;
+}
+#second .container .row .col-xl-6 p {
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+}
+#second .container .row .col-xl-6 p i {
+  font-size: 13px;
+  font-weight: 600;
+}
+#second .container .row .col-xl-6 .second_tel_img {
+  position: absolute;
+  bottom: 30px;
+}
+#second .container .row .col-xl-6 .second_tel_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .row .col-xl-6 .second_pay_img {
+  position: absolute;
+  bottom: 200px;
+  left: 80px;
+  max-width: 280px;
+  height: 50px;
+  display: flex;
+}
+#second .container .row .col-xl-6 .second_pay_img img {
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#topselling {
+  margin-bottom: 50px;
+}
+#topselling .container {
+  padding: 0;
+}
+#topselling .container h4 {
+  display: flex;
+  justify-content: space-between;
+}
+#topselling .container .row .col-xl-6 .div {
+  background-color: #fff;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .rr {
+  height: 250px;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .rr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .topselling_text {
+  padding: 10px;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .topselling_text i {
+  color: rgb(255, 187, 56);
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .topselling_text p {
+  font-weight: 600;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .topselling_text span.red {
+  color: red;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .topselling_text span.overline {
+  text-decoration: line-through;
+  color: gray;
+}
+#topselling .container .row .col-xl-6 .div .row .col-xl-6 .topselling_text button {
+  padding: 5px 10px;
+  background-color: rgb(255, 187, 56);
+  border: none;
+  display: block;
+  margin-top: 10px;
+}
+
+#arrivals {
+  margin-bottom: 50px;
+}
+#arrivals .container {
+  padding: 0;
+}
+#arrivals .container h4 {
+  display: flex;
+  justify-content: space-between;
+}
+#arrivals .container .row .col-xl-3 .game_item {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  width: 280px;
+}
+@media (max-width: 768px) {
+  #arrivals .container .row .col-xl-3 .game_item {
+    width: 100%;
+  }
+}
+#arrivals .container .row .col-xl-3 .game_item .game_img {
+  min-height: 280px;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_ftr {
+  padding: 10px;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_ftr i {
+  color: rgb(255, 187, 56);
+}
+#arrivals .container .row .col-xl-3 .game_item .game_ftr p {
+  font-weight: 600;
+  font-size: 14px;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_ftr span.ovrlineprise {
+  text-decoration: line-through;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_ftr span.redprice {
+  color: red;
+}
+#arrivals .container .row .col-xl-3 .game_item ul {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+#arrivals .container .row .col-xl-3 .game_item ul li {
+  color: #000000;
+  font-weight: 600;
+}
+#arrivals .container .row .col-xl-3 .game_item ul li i {
+  font-size: 13px;
+}
+#arrivals .container .row .col-xl-3 .game_item button {
+  padding: 5px 20px;
+  border: none;
+  background-color: rgb(255, 187, 56);
+  color: black;
+  transform: translateY(44px);
+  margin: 0 auto;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+#arrivals .container .row .col-xl-3 .game_item:hover button {
+  transform: translateY(-6px);
+}
+#arrivals .container .row .col-xl-3 .game_item:hover .game_icons {
+  right: 10px;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_icons {
+  position: absolute;
+  right: -32px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+#arrivals .container .row .col-xl-3 .game_item .game_icons i {
+  margin-bottom: 8px;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: rgb(225, 223, 223);
+  padding: 5px;
+}
+
+#third {
+  background-image: url(/shopo/src/images/bg_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  margin-bottom: 50px;
+}
+#third .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#third .container p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 60px;
+}
+#third .container p span {
+  color: rgb(255, 187, 56);
+}
+#third .container .third_content input {
+  padding: 10px;
+  border: none;
+}
+#third .container .third_content input[type=email] {
+  padding: 10px;
+  border: none;
+  width: 340px;
+}
+#third .container .third_content input[type=submit] {
+  background-color: rgb(255, 187, 56);
+  border: none;
+  color: #000000;
+  transform: translateX(-7px);
+}
+@media (max-width: 768px) {
+  #third .container .third_content input[type=submit] {
+    transform: translateX(0);
+  }
+}
+
+footer {
+  padding: 50px 0px;
+}
+footer .container .row .col-xl-3 ul {
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+}
+footer .container .row .col-xl-3 ul li {
+  margin-bottom: 10px;
+}
+footer .container .row .col-xl-3 ul li a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

@@ -32,3 +32,17 @@ Navcategory&&Navcategory.addEventListener("click",()=>{
    // console.log('ok');
    
 })
+//totop
+const Totop=document.querySelector(".to-top");
+Totop&&Totop.addEventListener("click", () =>{
+   window.scrollTo({ top: 0, behavior: "smooth" });
+})
+
+window.addEventListener("scroll",()=>{
+   if(window.scrollY>400){
+      Totop.style.display="flex";
+   }
+   else{
+      Totop.style.display="none ";
+   }
+})
