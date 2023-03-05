@@ -130,9 +130,9 @@ header{
                     z-index: 1;
                     background-color: #fff;
                     width: 130px;
-                   }
-                  
-                   ul{
+                }
+                
+                ul{
                     display: none;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                     padding: 0;
@@ -422,6 +422,9 @@ header{
         }
        }
     }
+}
+.sal{
+    display: block;
 }
 //addtocard scroll 
 .addtocardlist::-webkit-scrollbar{

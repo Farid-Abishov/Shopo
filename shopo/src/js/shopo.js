@@ -20,6 +20,7 @@ var UK_cntnt=document.querySelector(".ff");
 
 UK&&UK.addEventListener("click",()=>{
    UK_cntnt.style.display="block";
+   // UK_cntnt.classList.toggle=("sal");
 })
 
 
