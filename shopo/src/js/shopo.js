@@ -19,8 +19,7 @@ var BANGLA=document.querySelector(".Bangla");
 var UK_cntnt=document.querySelector(".ff");
 
 UK&&UK.addEventListener("click",()=>{
-   UK_cntnt.style.display="block";
-   // UK_cntnt.classList.toggle=("sal");
+   UK_cntnt.classList.toggle("sal");
 })
 
 
@@ -29,13 +28,13 @@ const Navcategory=document.querySelector(".nav_category");
 const Categry_cntnt=document.querySelector(".category_cntnt");
 
 Navcategory&&Navcategory.addEventListener("click",()=>{
-   Categry_cntnt.classList.toggle=("actv_cate_cntnt");
-   // console.log('ok');
+   Categry_cntnt.classList.toggle("actv_cate_cntnt");
    
 })
 
-//totop
+//totop and fixed navbar
 const Totop=document.querySelector(".to-top");
+var navfix=document.querySelector("#header_bottom");
 Totop&&Totop.addEventListener("click", () =>{
    window.scrollTo({ top: 0, behavior: "smooth" });
 })
@@ -43,8 +42,10 @@ Totop&&Totop.addEventListener("click", () =>{
 window.addEventListener("scroll",()=>{
    if(window.scrollY>400){
       Totop.style.display="flex";
+      navfix.classList.add("active_nav")
    }
    else{
       Totop.style.display="none";
+      navfix.classList.remove("active_nav")
    }
 })

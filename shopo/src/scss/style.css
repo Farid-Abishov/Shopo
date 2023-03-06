@@ -350,15 +350,21 @@ header #header_bottom .container .col-2 ul li i {
   font-size: 12px;
 }
 header #header_bottom .container .col-2 ul li ul {
+  display: none;
   background-color: #fff;
   padding: 0;
-  height: 0px;
-  display: none;
+  z-index: 1;
   width: 100%;
   position: absolute;
   left: 0;
   top: 30px;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+header #header_bottom .container .col-2 ul li ul li {
+  font-weight: 100;
+  font-size: 14px;
+  color: rgb(115, 113, 113);
 }
 header #header_bottom .container .col-6 nav {
   height: 100%;
@@ -436,8 +442,28 @@ header #header_bottom .container .col-4 button {
   padding: 0px 10px;
 }
 
+.active_nav {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  animation-name: fadeInUp;
+  animation-duration: 0.4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
 .sal {
-  display: block;
+  display: block !important;
 }
 
 .addtocardlist::-webkit-scrollbar {
