@@ -451,6 +451,48 @@ header{
 .sal{
     display: block !important;
 }
+//offcanvas
+.offcanvas{
+    width: 310px !important;
+}
+
+.btn-close{
+    background-color: red;
+    color: black !important;
+}
+.offcanvas-body{
+    padding: 0;
+    ul{
+        padding: 0;
+    }
+    i{
+        display: inline-block !important;
+        background-color: $navbgcolor;
+    }
+}
+.mobnav_icon{
+    i{
+        display: inline-block !important;
+        margin-right: 10px;
+        position: relative;
+        
+        span{
+            font-size: 11px;
+            background: $navbgcolor;
+            width: 14px;
+            height: 13px;
+            padding: 3px;
+            border: 50%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -6px;
+            top: 3px;
+        }
+    }
+}
 //addtocard scroll 
 .addtocardlist::-webkit-scrollbar{
     width: 3px;

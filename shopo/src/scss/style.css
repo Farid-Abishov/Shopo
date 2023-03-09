@@ -466,6 +466,47 @@ header #header_bottom .container .col-4 button {
   display: block !important;
 }
 
+.offcanvas {
+  width: 310px !important;
+}
+
+.btn-close {
+  background-color: red;
+  color: black !important;
+}
+
+.offcanvas-body {
+  padding: 0;
+}
+.offcanvas-body ul {
+  padding: 0;
+}
+.offcanvas-body i {
+  display: inline-block !important;
+  background-color: rgb(255, 187, 56);
+}
+
+.mobnav_icon i {
+  display: inline-block !important;
+  margin-right: 10px;
+  position: relative;
+}
+.mobnav_icon i span {
+  font-size: 11px;
+  background: rgb(255, 187, 56);
+  width: 14px;
+  height: 13px;
+  padding: 3px;
+  border: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -6px;
+  top: 3px;
+}
+
 .addtocardlist::-webkit-scrollbar {
   width: 3px;
 }

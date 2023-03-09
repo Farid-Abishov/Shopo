@@ -49,3 +49,6 @@ window.addEventListener("scroll",()=>{
       navfix.classList.remove("active_nav")
    }
 })
+localStorage.setItem("salam",[1,2,3,4]);
+var a=localStorage.getItem("salam");
+console.log(a[0]);
