@@ -481,9 +481,23 @@ header #header_bottom .container .col-4 button {
 .offcanvas-body ul {
   padding: 0;
 }
-.offcanvas-body i {
-  display: inline-block !important;
+.offcanvas-body ul li {
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.offcanvas-body ul li:hover {
   background-color: rgb(255, 187, 56);
+}
+.offcanvas-body ul li i {
+  display: inline-block !important;
+  font-size: 14px !important;
+}
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
 }
 
 .mobnav_icon i {
@@ -713,6 +727,11 @@ header #header_bottom .container .col-4 button {
   height: 50px;
   display: flex;
 }
+@media (max-width: 576px) {
+  #second .container .row .col-xl-6 .second_pay_img {
+    left: 40px;
+  }
+}
 #second .container .row .col-xl-6 .second_pay_img img {
   margin-left: 10px;
   width: 100%;
@@ -901,9 +920,6 @@ header #header_bottom .container .col-4 button {
   }
 }
 
-footer {
-  padding: 50px 0px;
-}
 footer .ftr_logo {
   text-align: center;
 }
@@ -929,6 +945,11 @@ footer .copyright .container .copy_container {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 576px) {
+  footer .copyright .container .copy_container {
+    flex-direction: column;
+  }
+}
 footer .copyright .container .copy_container .copy_left i {
   font-size: 20px;
   margin-right: 10px;
@@ -945,4 +966,14 @@ footer .copyright .container .copy_container .copy_left span {
   word-spacing: 6px;
   font-size: 20px;
   color: #858383;
+}
+@media (max-width: 576px) {
+  footer .copyright .container .copy_container .copy_left span {
+    font-size: 14px;
+  }
+}
+footer .copyright .container .copy_container .copy_right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

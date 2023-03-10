@@ -464,10 +464,26 @@ header{
     padding: 0;
     ul{
         padding: 0;
-    }
-    i{
-        display: inline-block !important;
-        background-color: $navbgcolor;
+      li{
+        transition: all ease-in-out .3s;
+        display: flex;
+        justify-content: space-between;
+        padding:  10px;
+        &:hover{
+         background-color:$navbgcolor;
+       }
+        i{
+            display: inline-block !important;
+            font-size: 14px !important;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+
+        }
+
+      }
     }
 }
 .mobnav_icon{
@@ -719,6 +735,9 @@ header{
                      max-width: 280px;
                     height: 50px;
                     display: flex;
+                    @media(max-width:576px){
+                        left: 40px;
+                    }
                     img{
                         margin-left: 10px;
                         width: 100%;
@@ -924,7 +943,6 @@ header{
 }
 //footer
 footer{
-    padding: 50px 0px;
     .ftr_logo{
         text-align: center;
     }
@@ -957,6 +975,9 @@ footer{
         .copy_container{
             display: flex;
             justify-content: space-between;
+            @media(max-width:576px){
+                flex-direction: column;
+            }
             .copy_left{
                 i{
                     font-size: 20px;
@@ -974,6 +995,15 @@ footer{
                     word-spacing: 6px;
                     font-size: 20px;
                     color: #858383;
+                    @media(max-width:576px){
+                     font-size: 14px;
+                    }
+                }
+            }
+            .copy_right{
+                img{
+                    width: 100%;
+                    object-fit: cover;
                 }
             }
         }
